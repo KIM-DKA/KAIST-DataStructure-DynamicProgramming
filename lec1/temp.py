@@ -97,3 +97,25 @@ while True:
     if x == "0":
         break
     print(int(x) * 2)
+
+
+ A='IE260_QUIZ1'
+ 
+
+ for i in range(1,11):
+    if i % 2 == 0: 
+        print(i)
+    else: 
+        continue 
+
+x=[1,2,3]
+
+y=[100,x,120]
+
+print(y)
+
+ 
+
+<result>
+
+print(y)

@@ -1,7 +1,7 @@
 # Programming and Execution Environment (chapter1.1)
-
+[챕터1: Python Overview](https://kooc.kaist.ac.kr/datastructure-2019s/lecture/40273)
 ##  Programming and DS&A
-[챕터1: Programming and Execution Environment](https://kooc.kaist.ac.kr/datastructure-2019s/lecture/40273)
+
 - 자료 구조 : 설계도, 구조 (어디에 화장실을 만들지)
 - 알고리즘 : 동작을 어떻게 하는지 (어떻게 화장실을 가는지)
 - 구현 : 프로그래밍 
@@ -338,6 +338,21 @@ a.print_home_color() # 결과는 'red'를 출력
 - 각 상위 dir 폴더에서 패키지를 불러오는 형태는 좋지 못함 
 
 ```python 
-
-from deu.kaist.selab.ie362.week1 import Home 
+from edu.kaist.selab.ie362.week1 import Home 
 ``` 
+
+- 아래와 같이 src 폴더의 이닛 스크립트에 다음과 같이 넣어주면 
+```python 
+# src/__init__.py
+
+from .edu.kaist.selab.ie362.week1.Home import Home
+```
+
+- 아래처럼 불러 올수 있다. 
+
+```python
+from src import Home
+
+my_home = Home('red')
+my_home.print_home_color()  # 출력: my home color is red
+```

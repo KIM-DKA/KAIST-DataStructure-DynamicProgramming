@@ -338,6 +338,13 @@ a.print_home_color() # 결과는 'red'를 출력
 - 각 상위 dir 폴더에서 패키지를 불러오는 형태는 좋지 못함 
 
 ```python 
-
-from deu.kaist.selab.ie362.week1 import Home 
+from edu.kaist.selab.ie362.week1 import Home 
 ``` 
+
+- 아래와 같이 src 폴더의 이닛 스크립트에 다음과 같이 넣어주면 
+```python 
+# src/__init__.py
+
+from .edu.kaist.selab.ie362.week1.Home import Home
+```
+

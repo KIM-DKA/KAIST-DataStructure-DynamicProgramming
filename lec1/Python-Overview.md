@@ -347,6 +347,7 @@ from edu.kaist.selab.ie362.week1 import Home
 
 from .edu.kaist.selab.ie362.week1.Home import Home
 ```
+<<<<<<< HEAD
 
 - 아래처럼 불러 올수 있다. 
 
@@ -356,3 +357,6 @@ from src import Home
 my_home = Home('red')
 my_home.print_home_color()  # 출력: my home color is red
 ```
+=======
+
+>>>>>>> object-swdesign-3

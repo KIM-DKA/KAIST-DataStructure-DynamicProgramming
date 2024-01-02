@@ -3,7 +3,7 @@
 # Postgre DB 
 database:
   type: 'PostgreSQL'
-  host: '172.16.57.11'
+  host: '172.16.57.21'
   port: 80
   username: null
   password: null
